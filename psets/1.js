@@ -10,3 +10,10 @@ Forgot how old someone is? Calculate it!
 */
 
 // write your solution here...
+var currentYear;
+function ageCalc(currentYear){
+     currentYear = prompt("What year is it now?");
+    var birthYear = prompt("What year were you born?");
+    var age = currentYear - birthYear;
+    console.log("You are either " + (age - 1) + " or " + age);
+}ageCalc(currentYear);

@@ -23,54 +23,32 @@
 
 // write your solution here.../**
 
-function squareNumber (number){
-  console.log("The result of squaring the number " + number + " is " + number * number + ".")
+function squareNumber(number){
+    console.log("The square of " + number + " is " + number * number + ".");
+    return number * number;
+}squareNumber(5);
 
-  return number * number;
-
-}
-squareNumber(5);
-
-function halfNumber(num){
-
-  var res = num / 2;
-
-  console.log("Half of " + num + " is " + res);
-
-  return res;
-}
-halfNumber();
+function halfNumber(number){
+    console.log("Half of " + number + " is " + number / 2);
+    return number / 2;
+}halfNumber(14);
 
 function percentOf(num1, num2){
-
-  var percent = (num1/num2) * 100;
-
-  console.log(num1 + " is " + percent + " % of " + num2);
-
-  return percent;
-}
-percentOf();
+    var percent = num1 / num2 * 100;
+    console.log(num1 + " is " + percent + "% of " + num2);
+    return percent;
+}percentOf(5, 50);
 
 function areaOfCircle(radius){
+    var area = Math.PI * (radius * radius);
+    area = Math.floor(area * 100) / 100;
+    console.log("The area for a circle with a radius of " + radius + " is " + area);
+    return area;
+}areaOfCircle(2);
 
-  var result = Math.PI * (radius * radius);
-
-  result = Math.floor(result * 100)/100;
-
-  console.log( "The area for the circle with radius " + result + " is " + result);
-
-  return result;
-
-}
-//console.log(areaOfCircle(2));
-
-function calc(num){
-
-  var h = halfNumber();
-  var s = squareNumber();
-  var a = areaOfCircle();
-  var p = percentOf(a,s);
-
-  console.log(p);
-}
-calc(2);
+function operations(number){
+    var half = halfNumber(number);
+    var square = squareNumber(half);
+    var calculate = areaOfCircle(square);
+    var area = percentOf(calculate,square);
+}operations(10);
