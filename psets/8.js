@@ -15,7 +15,15 @@ For example:
   verbing('go'): 'go'
 
 */
-
+var word;
 function verbing(word) {
-  // write your solution here...
+word = prompt("What is your word?");
+if(word.length > 2){
+    if(word.slice(-3) != "ing"){
+        word = word.concat("ing");
+    }else{
+        word = word.concat("ly");
+    }
 }
+document.writeln(word);
+}verbing(word);
