@@ -12,3 +12,14 @@ Write a function named calculateSupply that:
 */
 
 // write your solution here...
+function calculateSupply(age, amount){
+    var maxAge = 120;
+    amount = prompt("How many units of your favorite snack do you eat per day?");
+    age = prompt("What is your age?");
+    var total = (amount * 365) * (maxAge - age);
+    document.write("You will need " + total + " to last you until the ripe old age of " + maxAge + ".");
+
+}
+calculateSupply();
+calculateSupply();
+calculateSupply();

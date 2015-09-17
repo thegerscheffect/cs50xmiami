@@ -17,6 +17,6 @@ function lifeTime(){
 var currentAge = prompt("What is your age?");
 var maxAge = prompt("Until what age will you live?");
 var perDay = prompt("How many pieces of snacks do you eat per day?");
-supply = (maxAge - currentAge) * perDay;
+supply = (maxAge - currentAge) * (perDay * 365);
 document.writeln("You will need " + supply + " units of your favorite snack to last you until the ripe old age of " + maxAge + ".");
 }lifeTime(supply);
