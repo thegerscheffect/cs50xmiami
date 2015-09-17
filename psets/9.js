@@ -14,7 +14,14 @@ For example:
   notBad('This dinner is bad!'): 'This dinner is bad!'
 
 */
-
+var sentence;
 function notBad(sentence) {
-  // write your solution here...
+sentence = prompt("What is your sentence?");
+var length = sentence.length;
+var bad = sentence.indexOf("bad");
+var not = sentence.indexOf("not");
+if(bad > not){
+    sentence = sentence.slice(0,not).concat("good!");
 }
+document.writeln(sentence);
+}notBad(sentence);
