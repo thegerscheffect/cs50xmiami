@@ -12,14 +12,15 @@ Write a function named calculateAge that:
 */
 
 // write your solution here...
+var age;
 function calculateAge(birthY, currentY){
 var date = new Date();
 currentY = date.getFullYear();
 birthY = prompt("What year were your born?");
 document.writeln("Current year: " + currentY);
-document.writeln("Birth year: " + birthY);
-var age = currentY - birthY;
-document.writeln("You are either " + (age - 1) + " or " + age);
+document.writeln("Birth year: " + birthY, "<br>");
+age = currentY - birthY;
+document.writeln("You are either " + (age - 1) + " or " + age, "<br>");
 }
 calculateAge();
 calculateAge();
