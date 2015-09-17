@@ -9,4 +9,13 @@ Write a function named tellFortune that:
 - Call that function 3 times with 3 different values for the arguments.
 */
 
-// write your solution here...
+function tellFortune(child, partner, geo, job){
+job = ["CEO", "Manager", "Busboy"];
+geo = ["Miami", "Frankfurt", "Tokyo"];
+partner = ["Lisa", "Sandra", "Kate"];
+child = ["4", "1", "8"];
+var output = document.writeln("You will be a " + job[i] + " in " + geo[i] + ", and married to " + partner[i] + " with " + child[i] + " kids.");
+}
+tellFortune(i=0);
+tellFortune(i=1);
+tellFortune(i=2);
