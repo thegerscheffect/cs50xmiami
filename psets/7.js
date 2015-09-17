@@ -10,7 +10,11 @@ For example:
 
 fixStart('babble'): 'ba**le'
 */
-
-function fixStart(s) {
-  // write your solution here...
-}
+var replaced;
+function fixStart(string) {
+string = prompt("What is the word?");
+var char1 = string.slice(0,1);
+var string1 = string.slice(1);
+var swap = string1.split(string.charAt(0)).join("*");
+var replaced = document.writeln(char1.concat(swap));
+}fixStart(replaced);
