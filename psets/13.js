@@ -14,3 +14,7 @@ Create a function called calcArea:
 */
 
 // write your solution here...
+function calcCircumference(radius){
+    radius = prompt("What is the radius?");
+    var circumference = ;
+}calcCircumference();

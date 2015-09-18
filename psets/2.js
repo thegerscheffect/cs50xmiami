@@ -11,12 +11,17 @@ Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no mo
 "You will need NN to last you until the ripe old age of X".
 */
 
-// write your solution here...
-var supply;
-function lifeTime(){
-var currentAge = prompt("What is your age?");
-var maxAge = prompt("Until what age will you live?");
-var perDay = prompt("How many pieces of snacks do you eat per day?");
-supply = (maxAge - currentAge) * (perDay * 365);
-document.writeln("You will need " + supply + " units of your favorite snack to last you until the ripe old age of " + maxAge + ".");
-}lifeTime(supply);
+function lifeTime(currentAge, maxAge, perDay){
+    if(!arguments[0]){
+        currentAge = prompt("What is your age?");
+    }
+    if(!arguments[0]){
+        maxAge = prompt("Until what age will you live?");
+    }
+    if(!arguments[0]){
+        perDay = prompt("How many pieces of snacks do you eat per day?");
+    }
+    var supply = (maxAge - currentAge) * (perDay * 365);
+    document.writeln("You will need " + supply + " units of your favorite snack to last you until the ripe old age of " + maxAge + ".");
+}
+lifeTime();
