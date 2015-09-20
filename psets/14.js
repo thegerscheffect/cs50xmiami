@@ -13,4 +13,21 @@ Create a function called fahrenheitToCelsius:
 - Convert it to celsius and output "NN°F is NN°C."
 */
 
-// write your solution here...
+function celsiusToFahrenheit(celTemp) {
+  if (!arguments[0]) {
+    celTemp = prompt("What is the temperature in Celsius?");
+  }
+  var fahrenheit = ((((celTemp * 9) / 5) + 32));
+  document.writeln(celTemp + "°C is " + fahrenheit + "°F." + "<br>");
+}
+celsiusToFahrenheit(25);
+
+function fahrenheitToCelsius(fahTemp) {
+  if(!arguments[0]){
+      fahTemp = prompt("What is the temperature in Fahrenheit?")
+  }
+  var celsius = (((fahTemp - 32) * 5) / 9);
+  celsius = Math.floor(celsius * 10) / 10;
+  document.writeln(fahTemp + "°F is " + celsius + "°C");
+}
+fahrenheitToCelsius(65);

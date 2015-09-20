@@ -13,8 +13,20 @@ Create a function called calcArea:
 - Calculate the area based on the radius, and output "The area is NN".
 */
 
-// write your solution here...
-function calcCircumference(radius){
-    radius = prompt("What is the radius?");
-    var circumference = ;
-}calcCircumference();
+function calcCircumference(radius) {
+  if(!arguments[0]){
+    radius = prompt("To calculate the circumference, what is the radius?");
+  }
+  var circumference = 2 * Math.PI * radius;
+  document.writeln("The circumference is: " + circumference + ".<br>");
+}
+calcCircumference(1);
+
+function calcArea(radius) {
+  if (!arguments[0]) {
+    radius = prompt("To calculate the area,what is the radius?");
+  }
+  var area = Math.PI * (radius * radius);
+  document.writeln("The area is: " + area + ".");
+}
+calcArea(2);

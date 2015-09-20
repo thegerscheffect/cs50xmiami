@@ -11,17 +11,19 @@ Write a function named calculateAge that:
 - Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
 */
 
-// write your solution here...
-var age;
 function calculateAge(birthY, currentY){
-var date = new Date();
-currentY = date.getFullYear();
-birthY = prompt("What year were your born?");
-document.writeln("Current year: " + currentY);
-document.writeln("Birth year: " + birthY, "<br>");
-age = currentY - birthY;
-document.writeln("You are either " + (age - 1) + " or " + age, "<br>");
+    if(!arguments[0]){
+        birthY = prompt("What year were your born?");
+    }
+    if(!arguments[1]){
+        var date = new Date();
+        currentY = date.getFullYear();
+    }
+    document.writeln("If the current year is: " + currentY + " and ");
+    document.writeln("your birth year is: " + birthY + " then:" + "<br>");
+    var age = currentY - birthY;
+    document.writeln("You are either " + (age - 1) + " or " + age + "<br>");
 }
-calculateAge();
-calculateAge();
-calculateAge();
+calculateAge("1990");
+calculateAge("2000");
+calculateAge("2010");

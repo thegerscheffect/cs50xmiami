@@ -15,7 +15,7 @@ function geometrizer(radius){
     var diameter = radius * radius;
     var circumference = 2 * Math.PI * radius;
     circumference = Math.floor(circumference * 100) / 100;
-    document.write("The circumference of the circle is " + circumference + ".");
+    document.write("The circumference of the circle is " + circumference + ".<br>");
     var area = Math.PI * diameter;
     area = Math.floor(area * 100) / 100;
     document.write("\nThe area of the circle is " + area);
