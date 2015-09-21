@@ -8,4 +8,6 @@ Write a for loop that will iterate from 0 to 10.
 - Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
 */
 
-// write your solution here...
+for(var i = 0; i <= 10; i++){
+  document.writeln(i + " * 9 = " + (i * 9) + "<br>");
+}
