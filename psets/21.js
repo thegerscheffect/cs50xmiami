@@ -17,4 +17,8 @@ Never forget another recipe!
     cocoa
 */
 
-// write your solution here...
+var recipe = {
+  title: ""
+  servings:
+  ingredients:
+};
