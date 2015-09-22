@@ -6,4 +6,10 @@ The even/odd reporter
   and report that to the screen (e.g. "2 is even").
 */
 
-// write your solution here...
+for(var i = 0; i <= 20; i++){
+  if(i % 2 == 0){
+    document.writeln(i + " is even" + "<br>");
+  } else {
+    document.write(i + " is odd" + "<br>");
+  }
+}
