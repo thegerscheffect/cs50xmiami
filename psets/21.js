@@ -18,7 +18,10 @@ Never forget another recipe!
 */
 
 var recipe = {
-  title: ""
-  servings:
-  ingredients:
+  title: "Guacamole",
+  servings: 5,
+  ingredients: ["Avocado", "Tomato", "Onion", "Salt", "Pepper"]
 };
+console.log("Title: " + recipe.title);
+console.log("Serves: " + recipe.servings);
+console.log("Ingredients: " + recipe.ingredients);

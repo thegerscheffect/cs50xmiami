@@ -10,4 +10,14 @@ It's like IMDB, but much much smaller!
   "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."
 */
 
-// write your solution here...
+var favMovie = {
+  title: "The Movie",
+  duration: 90,
+  stars: [
+    "Billy", "Bob", "Thornton", "Junior"
+  ]
+};
+function movies(){
+  document.writeln(favMovie.title + " lasts for " + favMovie.duration + " minutes. Stars: " + favMovie.stars);
+}
+movies();

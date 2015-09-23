@@ -16,4 +16,44 @@ Keep track of which books you read and which books you want to read!
   like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
 */
 
-// write your solution here...
+var bookArray = [
+  book1 = {
+  title: "The Mystery",
+  author: "Barry White",
+  alreadyRead: true
+}];
+bookArray.push(
+  book2 = {
+  title: "Clueless",
+  author: "Arnold Schwartz",
+  alreadyRead: false
+});
+bookArray.push(
+  book3 = {
+  title: "Javascript for Dummies",
+  author: "Kerry Bradeshaw",
+  alreadyRead: true
+});
+bookArray.push(
+  book4 = {
+  title: "Cycling in the world",
+  author: "Frederich Holmes",
+  alreadyRead: false
+});
+bookArray.push(
+  book5 = {
+  title: "Why Not Windows",
+  author: "Lisa Leslie",
+  alreadyRead: true
+});
+var bookLen = bookArray.length;
+for(var i = 0; i < bookLen; i++) {
+  var obj = bookArray[i].alreadyRead;
+  if (obj == true) {
+    console.log("You already read " + bookArray[i].title + " by " + bookArray[i].author);
+  } else {
+    console.log("You still need to read " + bookArray[i].title + " by " + bookArray[i].author);
+  }
+}
+
+console.log(bookArray);
