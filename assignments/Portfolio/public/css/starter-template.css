@@ -5,9 +5,16 @@ body {
 #sidebar {
     background: #51354B;
     min-height: 300px;
+    width: 215px;
 }
-
+#team {
+    font-size: large;
+    color: white;
+}
+#user {
+    color: #AF98A9;
+}
 #chat {
-    background: skyblue;
+    background: deepskyblue;
     min-height: 300px;
 }
